@@ -15,13 +15,15 @@
 
 </head>
 <body>
-    <header class="container">
+    <header >
+      <section class="container">
         <!-- --------------------------nav-bar-start------------------------------- -->
-        <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
-            <h2 class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark fw-semibold text-decoration-none">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4"> 
+            <h2 class="d-flex align-items-center col-lg-3 mb-2 mb-lg-0 text-dark fw-semibold text-decoration-none">
               Pro Edu
             </h2>
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <ul class="nav navbar-expand-lg col-lg-auto mb-2 justify-content-center mb-lg-12">
               <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
               <li><a href="#" class="nav-link px-2 link-secondary">Courses</a></li>
               <li><a href="#" class="nav-link px-2 link-secondary">Deals</a></li>
@@ -29,11 +31,44 @@
               <li><a href="#" class="nav-link px-2 link-secondary">About</a></li>
               <li><a href="#" class="nav-link px-2 link-secondary">Register</a></li>
             </ul>
-            <div class="col-md-3 text-end">
+            <div class="col-md-3 col-lg-3 text-end">
               <button type="button" class="btn btn-outline-primary me-2">Register</button>
             </div>
-            <!-- -------------------------nav-bar-end-------------------------------- -->
           </nav>
+        </div>
+      </section>
+            <!-- -----------------------off-Offcanvas-start-------------------------- -->
+            <section>
+            <div class="row">
+              <nav class="navbar bg-light fixed-top visually-hidden">
+                <div class="container offcanvas-md offcanvas-sm">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler"class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body offcanvas-md offcanvas-sm">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </section>
+            <!-- -------------------------nav-bar-end-------------------------------- -->
+         
            <!-- ---------------------------carousel-stat------------------------------ -->
           <section class="container mb-5">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -41,7 +76,7 @@
                 <div  class="carousel-inner   " >
                   <div class="carousel-item active">
                     <img class="img-fluid" class="" src="images/cover/cover-1.png" class="d-block w-100" alt="..." >
-                    <div class="carousel-caption d-none d-md-block h-75 bg-dark bg-opacity-10 bg-gradient text-center">
+                    <div class="carousel-caption d-none d-md-block h-75 bg-dark bg-opacity-25 bg-gradient text-center">
                       <h1 class="fs-1 fw-bold">Get Started Digital</h1>
                       <h1 class="fs-1 fw-bold">Learning</h1>
                       <p class="">It is a long established fact that a reader will be distracted by <br> the readable content of a page when looking at its layout..</p>
@@ -90,15 +125,15 @@
            </header>
            <!-- -------------------------------------carousel-part-end--------------------- -->
            <!-- -------------------------------------courses-part-start--------------------- -->
-    <main class="mt-5 container">
+   <main class="mt-5 container">
       <!-- --------------course-part-discover------------ -->
       <div class="col-lg-12 col-sm-12 col-md-12 col-12">
         <h1 class="text-center mt-2">Discover Our Popular</h1>
         <h1 class="text-center ">Courses</h1>
         <p class="text-center">It is a long established fact that a reader will be distracted by the readable <br> content of a page when looking at its layout.</p>
     </div>
-      <section class="mt-5">
-          <div class="container overflow-hidden text-center">
+      <section class="mt-5 mb-5">
+          <div class="container overflow-hidden ">
             <div class="row gy-5">
                    <!-- -------course-1-------- -->
               <div class="col-lg-6 col-md-6 col-sm-12">
@@ -106,7 +141,7 @@
                   <div class="p-3 border bg-light">
                     <img src="images/course/course-1.png"class="" alt="">
                   </div>
-                  <div class="my-5">
+                  <div class="my-4">
                    <h4 class="fw-bold">Fundamental Of UI/UX Design</h4>
                    <p class="text-start">Some quick example text t0 build on the card title <br> and make up the bulk of the card.</p>
                    <h4 class="text-primary text-start">Price : $20</h4>
@@ -119,7 +154,7 @@
                   <div class="p-3 border bg-light">
                     <img src="images/course/course-2.png"class="" alt="">
                   </div>
-                  <div class="my-5">
+                  <div class="my-4">
                    <h4 class="fw-bold">Javascript Basic to advanced </h4>
                    <p class="text-start">Some quick example text t0 build on the card title <br> and make up the bulk of the card.</p>
                    <h4 class="text-primary text-start">Price : $20</h4>
@@ -132,7 +167,7 @@
                   <div class="p-3 border bg-light">
                     <img src="images/course/course-3.png"class="" alt="">
                   </div>
-                  <div class="my-5">
+                  <div class="my-4">
                    <h4 class="fw-bold">Digital Marketing</h4>
                    <p class="text-start">Some quick example text t0 build on the card title <br> and make up the bulk of the card.</p>
                    <h4 class="text-primary text-start">Price : $20</h4>
@@ -145,7 +180,7 @@
                   <div class="p-3 border bg-light">
                     <img src="images/course/course-4.png"class="" alt="">
                   </div>
-                  <div class="my-5">
+                  <div class="my-4">
                    <h4 class="fw-bold">Motion Graphics</h4>
                    <p class="text-start">Some quick example text t0 build on the card title <br> and make up the bulk of the card.</p>
                    <h4 class="text-primary text-start">Price : $20</h4>
@@ -159,7 +194,7 @@
                   <div class="p-3 border bg-light">
                     <img src="images/course/course-5.png"class="" alt="">
                   </div>
-                  <div class="my-5">
+                  <div class="my-4">
                    <h4 class="fw-bold">Fundamental Python </h4>
                    <p class="text-start">Some quick example text t0 build on the card title <br> and make up the bulk of the card.</p>
                    <h4 class="text-primary text-start">Price : $20</h4>
@@ -169,11 +204,11 @@
                <!-- -------course-6---------->
 
               <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="d-flex justify-content-start my">
+                <div class="d-flex justify-content-start">
                   <div class="p-3 border bg-light">
                     <img src="images/course/course-6.png"class="" alt="">
                   </div>
-                  <div class="my-5">
+                  <div class="my-4">
                    <h4 class="fw-bold">Advanced level Python</h4>
                    <p class="text-start">Some quick example text t0 build on the card title <br> and make up the bulk of the card.</p>
                    <h4 class="text-primary text-start">Price : $20</h4>
@@ -185,9 +220,73 @@
           </div>
 
         </div>
+        <div class="text-center my-5">
+          <button class="btn btn-primary px-5">See More Courses</button>
+        </div>
 
       </section>
       <!-- ---------------------------course-part-end-------- -->
+      <!-- ---------------------------explore-part-start---------->
+      <section class="container mt-5 mb-5">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-6 col-md-12 col-sm-12 ">
+            <img class="img-fluid w-100" src="images/working.png" alt="">
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <h1>Explore The e-learning Institute</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomized words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure. 
+                <br><br>
+              Anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.</p>
+
+              <div class="d-flex flex-row justify-content-between ms-1">
+                <div class="flex flex-row ms-2">
+                  <h3>3.2K+</h3>
+                  <p>Expert member</p>
+                </div>
+                <div class="flex flex-row">
+                  <h3>1k+</h3>
+                  <p>Rating & Review</p>
+                </div>
+                <div class="flex flex-row">
+                  <h3>600+</h3>
+                  <p>Online Course</p>
+                </div>                       
+             </div>
+              <button class="btn btn-primary mx-3 mr-2">Read More</button>
+
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------------explore-part-end-------- -->
+      <section class="col-lg-12 col-md-12 col-sm-12 d-flex bg-primary justify-content-around align-items-center py-5">
+        <div>
+          <h1 class="text-white">Ready to join?</h1>
+          <p class="text-white">It is a long established fact that a reader will be distracted by the </p>
+          <p class="text-white">readable content of a page when looking at its layout.</p>
+        </div>
+        <div>
+          <button class="btn btn-light">Register Now</button>
+        </div>
+      </section>
+    <section >
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 ">
+       <div>
+          <h1 class="">Meet Our Successfully Students</h1>
+            <p>It is a long established fact that a reader will be distracted </p>
+            <p>by the readable content of a page when looking at its layout.</p>
+        </div>
+       
+        <div>
+          <img class="img-fluid float-start" src="images/student/student-1.png" alt="">
+          <img class="img-fluid" src="images/student/student-2.png" alt="">
+          <img class="img-fluid" src="images/student/student-3.png" alt="">
+          <img class="img-fluid float-end" src="images/student/student-4.png" alt="">
+          
+         </div>
+        </div>
+      </div>
+  </section>
 
     </main>
     <footer></footer>
